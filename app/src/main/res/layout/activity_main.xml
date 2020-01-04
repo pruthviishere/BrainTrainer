@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/pro"
+        android:layout_width="261dp"
+        android:layout_height="85dp"
+        android:layout_marginTop="175dp"
+        android:layout_marginBottom="506dp"
+        android:foregroundGravity="center_vertical|center"
+        android:gravity="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.506"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.81" />
+
+    <TextView
+        android:id="@+id/time"
+        android:layout_width="60dp"
+        android:layout_height="86dp"
+        android:layout_marginTop="175dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginBottom="500dp"
+        android:gravity="center"
+          
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/pro"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.75" />
+
+    <TextView
+        android:id="@+id/score"
+        android:layout_width="60dp"
+        android:layout_height="86dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="175dp"
+        android:layout_marginBottom="500dp"
+        android:gravity="center"
+          
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/pro"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.76" />
+
+    <TableLayout
+        android:id="@+id/tableLayout"
+        android:layout_width="380dp"
+        android:layout_height="284dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="186dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/time"
+        app:layout_constraintVertical_bias="1.0">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/op1"
+                android:layout_width="196dp"
+                android:layout_height="142dp"
+                android:foregroundGravity="center"
+                android:gravity="center"
+                android:onClick="ch1"
+                android:tag="1" />
+
+            <!--android:onClick="btnTapped"-->
+
+            <Button
+                android:id="@+id/op3"
+                android:layout_width="196dp"
+                android:layout_height="142dp"
+                android:foregroundGravity="center"
+                android:gravity="center"
+                android:onClick="ch2"
+                android:tag="3" />
+                <!--android:onClick="btnTapped"-->
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/op2"
+                android:layout_width="196dp"
+                android:layout_height="142dp"
+                android:foregroundGravity="center"
+                android:gravity="center"
+                android:onClick="ch3"
+                android:tag="2" />
+                <!--android:onClick="btnTapped"-->
+
+
+            <Button
+                android:id="@+id/op4"
+                android:layout_width="196dp"
+                android:layout_height="142dp"
+                android:foregroundGravity="center"
+                android:gravity="center"
+                android:onClick="ch4"
+                android:tag="4" />
+                android:onClick="btnTapped"
+
+        </TableRow>
+
+    </TableLayout>
+
+    <TextView
+        android:id="@+id/tvchecked"
+        android:layout_width="263dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="39dp"
+        android:layout_marginBottom="113dp"
+        android:gravity="center"
+
+        android:textColor="#00BCD4"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tableLayout"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <Button
+        android:id="@+id/reset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:layout_marginBottom="24dp"
+        android:text="@string/button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvchecked"
+        app:layout_constraintVertical_bias="1.0" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
